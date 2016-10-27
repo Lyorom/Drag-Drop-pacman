@@ -33,12 +33,12 @@ $(function(){
             else if(div.children(".fantome").length == 1){
                 $("#drop").html('<img src="./ressource/pacman dead.png"  width=200px height=200px />');
                 setTimeout(function(){
-                $("*").html('<img src="./ressource/easter egg/dead.jpg" width="100%" />');
-                },5000);
+                $("*").html('<img src="./ressource/easter egg/dead.jpg" width="100%" /><audio autoplay="" loop=""><source src="http://www.sound-fishing.net/SF-bruitages/creature/chipmunk.mp3" type="audio/mpeg"></audio>');
+                },3000);
                 setTimeout(function reload() {
                     alert('error');
                     location.reload();
-                },6000);
+                },4000);
             }
            
         }
