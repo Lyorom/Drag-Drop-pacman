@@ -33,7 +33,7 @@ $(function(){
             else if(div.children(".fantome").length == 1){
                 $("#drop").html('<img src="./ressource/pacman dead.png"  width=200px height=200px />');
                 setTimeout(function(){
-                $("body").html('<img src="./ressource/easter egg/dead.jpg" />');
+                $("*").html('<img src="./ressource/easter egg/dead.jpg" width="100%" />');
                 },5000);
                 setTimeout(function reload() {
                     alert('error');
