@@ -1,19 +1,38 @@
 body {
-    background-color: #1D1F21;
+    margin: auto;
+    background-image:url(../ressource/bg.png);
+    background-size: 100%;
     font-family: sans-serif;
+    color: white;
+    margin: 0px 150px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 400px;
+    margin-top: 50px;
+}
+
+
+
+
 
 .pacman {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content:space-around;
+    border: solid 5px #0000DF;
+    background-color: black;
 }
 
-.pacman div {
+.pacman .boulebox {
     display: flex;
     align-items: center;
-    margin: 10px;
-    
 }
 
 .boule {
@@ -21,7 +40,8 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    z-index: auto;
+    z-index: 1;
+    margin: 5px;
 }
 
 .fantome {
@@ -29,20 +49,18 @@ body {
     background-size: cover;
     width: 200px;
     height: 200px;
+    z-index: 3;
 }
 
 #drop {
-    background-image: url(../ressource/Pacman-Logo.png);
+    background-image: url(../ressource/Pacman.png);
     background-size: cover;
     width: 200px;
     height: 200px;
+    z-index: 2;
 }
 
-a {
-    text-decoration: none;
-    color: chocolate;
-    border: solid 1px chocolate;
-    justify-content: center;
-    font-size: 30px;
-    padding: 5px;
+
+flooter {
+    
 }
